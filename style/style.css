@@ -1,0 +1,26 @@
+ :root{
+    --color--boutton: #b90d0d;
+    --color--principal: #090908;
+    --color--header: #b9b7b8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    margin:3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    color: var(--color--boutton);
+    margin-bottom: 1em;
+}
