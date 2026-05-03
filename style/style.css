@@ -1,8 +1,12 @@
-:root{
+
+ :root{
     --color--boutton: #b90d0d;
     --color--principal: #090908;
     --color--header: #b9b7b8;
 }
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 header nav {
     display: flex;
     align-items: center;
@@ -106,4 +111,17 @@ main h1 {
     border-top: 1px solid gray;
     padding: 1em;
  }
+}
+.hero{
+    margin:3em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    color: var(--color--boutton);
+    margin-bottom: 1em;
+
 }
