@@ -15,6 +15,14 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+.corpscache{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    margin: 1em;
+}
 
 header nav {
     display: flex;
@@ -116,10 +124,10 @@ main h1 {
     padding: 1em;
  }
 
- & a{
+ & button{
     text-decoration: none;
     border: 1px solid gray;
-    padding: 0.4em;
+    padding: 0.9em;
     border-radius: 1em;
     color: var(--color--boutton);
     background-color: var(--color--header);
@@ -202,3 +210,65 @@ footer p {
     font-size: 0.8em;
 }
 
+
+/* partie prendre un rendez vous */
+.rendez-vous form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    & p{
+        font-size: 1.5em;
+    }
+    
+    & .date{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+    & .pourquoi{
+         display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & input[type="text"], input[type='email'] ,input[type="date"], select {
+        width: 20em;
+        height: 2em;
+        border-radius: 0.5em;
+        border: 1px solid gray;
+        font-size: 1em;
+         
+    }
+    & input[type="submit"]{
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 0.7em;
+        border: 1px solid gray;
+        background-color: var(--color--header);
+        color: var();
+    }
+
+
+  
+}
+
+
+
+.rendez-vous{
+    display :none;
+}
+
+.styleSais{
+    display: flex;
+}

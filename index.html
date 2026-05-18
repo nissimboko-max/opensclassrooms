@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="scripts/script.js" defer></script>
         <title>AUTO-PRESTIGE</title>
     </head>
 <body>
@@ -40,13 +41,13 @@
                 <img src="images/location-voiture.jpg" alt="Location de voiture">
                 <h2>Location de voiture</h2>
                 <p>Dans cette rubrique nous mettons a votre disposition des voitures de location à des prix très abordable.</p>
-                <a href="">louer une voiture</a>
+                <button>louer une voiture</button>
             </div>
             <div class="Achat-voiture">
                 <img src="images/achat voiture.jpg" alt="Achat de voiture">
                 <h2>Achat de voiture</h2>
                 <p>Avec nous acheter  une voiture n'a jamais été aussi simple ,selon vos goût et vos choix.</p>
-                <a href="">Acheter une voiture</a>
+                <button>Acheter une voiture</button>
 
             </div>
 
@@ -54,7 +55,7 @@
                 <img src="images/reparation-voiture.jpg" alt="Entretien de voiture">
                 <h2>Entretien de voiture</h2>
                 <p>Prennez rendez-vous pour l'entretien et reparation de votre voiture .</p>
-                <a href="">prendre rendez-vous</a>
+                <button id="apputamento">rendez-vous</button> 
 
             </div>
 
@@ -90,8 +91,57 @@
               
         </section>
 
-    </main>
+       
 
+    </main>
+    <div class="rendez-vous">
+
+                    
+                <form action="">
+                    <p>Prenez rendez-vous</p>
+
+                    <div>
+                        <label for="Nom">Nom(s) :</label>
+                        <input type="text"  placeholder="Votre nom" id="Nom">
+                    </div>
+                    
+                    <div>
+                        <label for="Prenom">Prenom(s) :</label>
+                        <input type="text" placeholder="Votre Prenom" id="Prenom">
+                    </div>
+
+                    <div>
+                        <label for="email">e-mail :</label>
+                        <input type="email" placeholder="votre adresse mail">
+                    </div>
+                    
+                    <div class="pourquoi">
+                        <label for="raison">Quelle est la raison de votre visite ?</label>
+
+                        <select name="raison" id="raison">
+
+                            <option value="entretien">entretien quotidienne</option>
+                            <option value="reparation">reparer votre voiture</option>
+                            <option value="location">louer une voiture</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+
+                    </div>
+                    
+                    <div class="date">
+                        <label for="date"> Quand ?</label>
+                        <input type="date" id="date">
+
+                    </div>
+                    
+                    <input type="submit" value="soumettre">
+                    
+                    
+                </form>
+            </div>
     <footer>
 
         <p>&copy; Tout droit reservé </p>
